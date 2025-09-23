@@ -1,0 +1,12 @@
+//ejercicio 1
+function miFuncion(obj) {
+    let numvoca=0;
+    for(let i=0; i<obj.length; i++){
+        if(obj[i]==`a` || obj[i]==`e` || obj[i]==`i` || obj[i]==`o` || obj[i]==`u`){
+            numvoca++;
+        }
+    }
+    return numvoca;
+}
+let obj = miFuncion(`euforia`);
+console.log(obj)
