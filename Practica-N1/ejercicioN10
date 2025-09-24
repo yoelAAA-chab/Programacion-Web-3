@@ -1,0 +1,1 @@
+usar callblack tiene la ventaja de ser rapido y simple pero las promesas puede manejar las operaciones asincronas ".the" y tiene el manejo de eerore mas simple como "cath y el try" ademas puede manejar async ,await
