@@ -1,0 +1,16 @@
+//ejercicio 3
+function miFuncion(obj){
+    let par=[];
+    let impar=[];
+    for(let i=0; i<obj.length; i++){
+        if(obj[i]%2==0){
+            par.push(obj[i]);
+        }else{
+            impar.push(obj[i]);
+        }
+    }
+    return{par,impar}
+}
+
+let obj=miFuncion([1,2,3,4,5]);
+console.log(obj)
