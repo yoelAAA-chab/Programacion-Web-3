@@ -1,0 +1,38 @@
+function tarea1(cb) {
+    setTimeout(() => {
+        console.log("tarea1");
+        cb();
+    }, 1000);
+}
+
+function tarea2(cb) {
+    setTimeout(() => {
+        console.log("tarea2");
+        cb();
+    }, 1000);
+}
+
+tarea1(() => {
+    tarea2(() => {
+        console.log("tareas completadas");
+    });
+});
+
+
+//await
+function tarea(ms, mensaje) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log(mensaje);
+            resolve();
+        }, ms);
+    });
+}
+
+async function ejecutarTareas() {
+    await tarea(1000, "prac 1");
+    await tarea(1000, "prac 2");
+    console.log("prac completadas");
+}
+
+ejecutarTareas();
