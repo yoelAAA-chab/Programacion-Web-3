@@ -1,0 +1,21 @@
+new Promise((resolve) => resolve(1))
+    .then((num) => {
+        console.log(num);
+        return new Promise((resolve) => resolve(num+1));
+    })
+    .then((num) => {
+        console.log(num);
+        return new Promise((resolve) => resolve(num+1));
+    });
+
+
+//con aawait
+async function secuencia() {
+    let num = await Promise.resolve(1);
+    console.log(num);  
+    num = await Promise.resolve(num+1);
+    console.log(num);  
+    num = await Promise.resolve(num+1);
+    console.log(num);  
+}
+secuencia();
