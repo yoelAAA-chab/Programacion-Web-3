@@ -1,0 +1,13 @@
+function conCallback(resolve) {
+    setTimeout(() => {
+        resolve("print del callback ojo ");
+    }, 1000);
+}
+
+
+function conPromesa() {
+    return new Promise((resolve) => {
+        conCallback(resolve);
+    });
+}
+conPromesa().then(console.log);  
