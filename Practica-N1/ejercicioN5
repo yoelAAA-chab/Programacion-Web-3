@@ -1,0 +1,18 @@
+//ejrcicio 5
+function miFuncion(band){
+    let nuv=``;
+    for(let i=band.length - 1; i >= 0; i--){
+        nuv=nuv+band[i];
+    }
+    if(band==nuv){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+let band1= miFuncion(`oruro`) 
+console.log(band1)
+let band2= miFuncion(`hola`) 
+console.log(band2) 
