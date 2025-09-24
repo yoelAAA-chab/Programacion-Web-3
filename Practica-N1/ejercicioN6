@@ -1,0 +1,7 @@
+//ejercico 6
+function mifuncion(vec){
+    return [vec[0],vec[1]]
+}
+
+let[primero,segundo]=mifuncion([1,2,3,4]);
+console.log(primero,segundo);
