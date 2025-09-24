@@ -1,0 +1,8 @@
+function micallback(cb) {
+    Promise.resolve("callback")
+        .then((msg) => cb(msg));
+}
+
+micallback((mensaje) => {
+    console.log(mensaje);  
+});
