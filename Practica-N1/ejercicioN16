@@ -1,0 +1,12 @@
+function sumaAsync(a, b) {
+    return new Promise((resolve) => resolve(a + b));
+}
+sumaAsync(5, 3).then(console.log);
+
+
+
+async function sumaAsyncAwait(a, b) {
+    const resultado = await sumaAsync(a, b);
+    console.log(resultado);  
+}
+sumaAsyncAwait(5, 3);
