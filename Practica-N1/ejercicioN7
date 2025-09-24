@@ -1,0 +1,9 @@
+//ejercicio 7
+function obtenerResto(arrg){
+    const [primero, segundo, ...resto] = arrg;
+    return { primero, segundo, resto };
+}
+
+const arrg= [1, 2, 3, 4, 5, 6];
+const resultado = obtenerResto(arrg);
+console.log(resultado);
