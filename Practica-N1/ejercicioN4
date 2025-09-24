@@ -1,0 +1,18 @@
+//ejercico 4
+function miFuncion(obj) {
+    let mayor = obj[0];  
+    let manor = obj[0];  
+    for (let i = 0; i < obj.length; i++) {
+        if (obj[i] > mayor) {
+            mayor = obj[i];  
+        }
+        if (obj[i] < manor) {
+            manor = obj[i];  
+        }
+    }
+    
+    return {mayor,manor};
+}
+
+let obj = miFuncion([3,1,5,4,2]);
+console.log(obj);  
