@@ -1,0 +1,9 @@
+function saludo(nombre, callback) {
+    setTimeout(() => {
+        callback(`hola ${nombre}`);
+    }, 2000); 
+}
+
+saludo("agner", (mensaje) => {
+    console.log(mensaje);  
+});
